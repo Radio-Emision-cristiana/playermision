@@ -906,6 +906,7 @@ function openInstagram() {
     console.log('📱 Abriendo Instagram...');
     if (isMobile()) {
         // Intenta abrir la app de Instagram primero
+        if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
         window.location.href = 'instagram://user?username=radioemisioncristiana';
         // Fallback a la web después de un timeout
         setTimeout(() => {
