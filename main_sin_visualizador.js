@@ -906,14 +906,14 @@ function openInstagram() {
     console.log('📱 Abriendo Instagram...');
     if (isMobile()) {
         // Intenta abrir la app de Instagram primero
-        window.location.href = 'instagram.com/radioemisioncristiana?igsh=aGRvMTI4M255MXk2&utm_source=ig_contact_invite';
+        window.location.href = 'instagram://user?username=tucu.gram';
         // Fallback a la web después de un timeout
         setTimeout(() => {
-            window.open('https://www.instagram.com/', '_blank');
+            window.open('https://www.instagram.com/radioemisioncristiana', '_blank');
         }, 1000);
     } else {
         // En desktop, abre la web directamente
-        window.open('https://www.instagram.com/', '_blank');
+        window.open('https://www.instagram.com/radioemisioncristiana', '_blank');
     }
 }
 
