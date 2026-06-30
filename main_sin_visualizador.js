@@ -909,11 +909,11 @@ function openInstagram() {
         window.location.href = 'instagram://user?username=tucu.gram';
         // Fallback a la web después de un timeout
         setTimeout(() => {
-            window.open('https://www.instagram.com/tucu.gram/', '_blank');
+            window.open('https://www.instagram.com/radioemisioncristiana?igsh=aGRvMTI4M255MXk2&utm_source=ig_contact_invite', '_blank');
         }, 1000);
     } else {
         // En desktop, abre la web directamente
-        window.open('https://www.instagram.com/tucu.gram/', '_blank');
+        window.open('https://www.instagram.com/radioemisioncristiana?igsh=aGRvMTI4M255MXk2&utm_source=ig_contact_invite', '_blank');
     }
 }
 
