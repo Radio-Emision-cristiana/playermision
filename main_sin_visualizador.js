@@ -902,19 +902,15 @@ function openFacebook() {
 }
 
 // Función para Instagram
-function openInstagram() {
-    console.log('📱 Abriendo Instagram...');
-    if (isMobile()) {
-        // Intenta abrir la app de Instagram primero
-        window.location.href = 'instagram://user?username=radioemisioncristiana.gran';
-        // Fallback a la web después de un timeout
-        setTimeout(() => {
-            window.open('https://www.instagram.com/radioemisioncristiana', '_blank');
-        }, 1000);
-    } else {
-        // En desktop, abre la web directamente
-        window.open('https://www.instagram.com/radioemisioncristiana', '_blank');
-    }
+unction openInstagram() {
+    const appUrl = "instagram://user?username=radioemisioncristiana";
+    const webUrl = "https://www.instagram.com/radioemisioncristiana/";
+
+    window.location.href = appUrl;
+
+    setTimeout(() => {
+        window.location.href = webUrl;
+    }, 1500);
 }
 
 // Función para Twitter
